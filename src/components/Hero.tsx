@@ -18,7 +18,9 @@ const StyledHero = styled.div`
 
 const Text = styled.p`
   color: white;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 `;
 
 const BoldText = styled(Text)`
@@ -45,14 +47,13 @@ const Brand = styled.h1`
 `;
 
 const Button = styled.button<{$mode: 'dark'|'light'}>`
-  width: 5rem;
-  height: 2rem;
+  width: 7rem;
+  height: 2.5rem;
   border: none;
   border-radius: 18px;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-right: 1rem;
-
+ 
   & span{
     vertical-align: middle;
   }
