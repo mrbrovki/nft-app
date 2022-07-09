@@ -1,10 +1,14 @@
-import React from 'react';
+import Categories from '../components/categories';
+import Hero from '../components/Hero';
 
 
 
 const Home = () => {
   return (
-    <></>
+    <>
+      <Hero />
+      <Categories />
+    </>
   )
 }
 
