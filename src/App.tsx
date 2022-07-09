@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { createGlobalStyle, css } from 'styled-components'
 //  components
 import Layout from "./components/layout";
 //  pages
@@ -9,11 +10,19 @@ import FeaturePage from "./pages/FeaturePage";
 import Home from "./pages/Home";
 import NftPage from "./pages/NftPage";
 
-
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+  }
+`
 
 const App = () => {
   return (
-   <Routes>
+   <>
+    <GlobalStyle />
+    <Routes>
     <Route path='/' element={<Layout />} >
       <Route index element={<Home />} />
       <Route path='collections/:collection' element={<CollectionPage />} />
@@ -25,6 +34,7 @@ const App = () => {
       <Route path="*" element={<ErrorPage />} />
     </Route>
    </Routes>
+   </>
   )
 }
 
