@@ -14,6 +14,10 @@ const StyledHero = styled.div`
   @media screen and (max-width: ${breakpoints.md}){
     height: 100vh;
   }
+
+  @media screen and (max-width: ${breakpoints.sm}){
+    background: linear-gradient(to bottom, #00000027, #00000082), url('/assets/hero-mobile.png') center/cover no-repeat;
+  }
 `;
 
 const Text = styled.p`
