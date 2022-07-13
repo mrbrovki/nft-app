@@ -10,7 +10,7 @@ const Title = styled.div`
   margin: 3rem 0;
 
   & span{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.2rem;
     margin-left: 10px;
     vertical-align: middle;
@@ -20,8 +20,8 @@ const Title = styled.div`
     vertical-align: middle;
   }
 
-  @media screen and (max-width: ${breakpoints.lg}){
-    justify-content: center;
+  @media screen and (max-width: ${breakpoints.md}){
+    text-align: center;
   }
 `;
 
@@ -29,9 +29,9 @@ const StyledCategories = styled.section`
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  
+
   @media screen and (max-width: ${breakpoints.xl}){
-    padding: 0 10rem;
+    padding: 0 8rem;
   }
   @media screen and (max-width: ${breakpoints.md}){
     padding: 0 5rem;

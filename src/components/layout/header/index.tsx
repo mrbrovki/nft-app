@@ -1,8 +1,8 @@
-import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { breakpoints } from '../../../lib/constants';
 import Button from '../../shared/Button';
 import Search from './Search';
+import styled from 'styled-components';
+import { breakpoints } from '../../../lib/constants';
 
 const StyledHeader = styled.header`
   height: 6rem;
@@ -12,6 +12,7 @@ const StyledHeader = styled.header`
   grid-gap: 1rem;
   background-color: #fff;
   position: fixed;
+  z-index: 30;
 
   @media screen and (max-width: ${breakpoints.xl}){
     padding: 0 10rem;
@@ -27,11 +28,16 @@ const StyledHeader = styled.header`
 `;
 
 const Explore = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 1.2rem;
   font-weight: 600;
+
+  & span{
+    vertical-align: middle;
+  }
+
+  & img{
+    vertical-align: middle;
+  }
 
   &:hover{
     cursor: pointer;
