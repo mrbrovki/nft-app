@@ -1,4 +1,5 @@
 import Categories from '../components/categories';
+import Collections from '../components/collections';
 import Hero from '../components/Hero';
 
 
@@ -8,6 +9,7 @@ const Home = () => {
     <>
       <Hero />
       <Categories />
+      <Collections />
     </>
   )
 }
