@@ -179,11 +179,6 @@ const Nft = styled.div<{index: number}>`
     width: 18rem;
     height: 26rem;
   }
-
-  @media screen and (max-width: ${breakpoints.xs}){
-    width: 16rem;
-    height: 24rem;
-  }
   
   ${props => {
     switch(props.index){
@@ -244,9 +239,6 @@ const Image = styled.img`
     height: 20rem;
   }
 
-  @media screen and (max-width: ${breakpoints.xs}){
-    height: 18rem;
-  }
 `;
 
 const NftInfo = styled.div`
