@@ -189,6 +189,15 @@ const Nft = styled.div<{index: number}>`
     switch(props.index){
       case 0:
         return css`
+          & img{
+            height: 22rem
+          }
+          @media screen and (max-width: ${breakpoints.sm}){
+            & img{
+              height: 20rem;
+            }
+          }
+
           @media screen and (max-width: ${breakpoints.lg}){
             grid-row: 2 / 3;
           }
@@ -204,9 +213,6 @@ const Nft = styled.div<{index: number}>`
             max-width: 16rem;
             height: 20rem;
 
-            & img{
-              height: 14rem;
-            }
             & div p
             {
               font-size: 0.75rem;
@@ -229,17 +235,12 @@ const Nft = styled.div<{index: number}>`
 
 const Image = styled.img`
   width: 100%;
-  height: 22rem;
+  
+  @media screen and (max-width: ${breakpoints.xl}){
+    height: 14rem;
+  }
 
   @media screen and (max-width: ${breakpoints.lg}){
-    height: 20rem !important;
-  }
-
-  @media screen and (max-width: ${breakpoints.md}){
-    height: 22rem;
-  }
-
-  @media screen and (max-width: ${breakpoints.sm}){
     height: 20rem;
   }
 
